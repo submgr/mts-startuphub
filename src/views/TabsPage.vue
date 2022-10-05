@@ -15,7 +15,7 @@
           <ion-icon :icon="homeOutline" />
         </ion-tab-button>
         
-        <ion-tab-button tab="tab4" href="/tabs/onboarding">
+        <ion-tab-button tab="tab4" href="/tabs/special">
           <ion-icon :icon="sparklesOutline" />
         </ion-tab-button>
       </ion-tab-bar>

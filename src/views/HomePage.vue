@@ -86,7 +86,7 @@ import {
 import { closeOutline } from 'ionicons/icons';
 
 export default defineComponent({
-    name: 'Tab1Page',
+    name: 'HomePage',
     components: {
         IonContent,
         IonPage,

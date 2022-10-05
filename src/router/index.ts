@@ -52,7 +52,11 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'home',
-        component: () => import('@/views/HomeScreen.vue')
+        component: () => import('@/views/HomePage.vue')
+      },
+      {
+        path: 'special',
+        component: () => import('@/views/SpecialPage.vue')
       }
     ]
   }

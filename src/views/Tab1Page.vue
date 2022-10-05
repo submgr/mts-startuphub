@@ -12,6 +12,7 @@
         </ion-toolbar>
       </ion-header>
       <router-link to="/tabs/auth">Auth Page</router-link>
+      <router-link to="/tabs/onboarding">Onboarding Screen</router-link>
     </ion-content>
   </ion-page>
 </template>
