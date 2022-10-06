@@ -57,7 +57,11 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'special',
         component: () => import('@/views/SpecialPage.vue')
-      }
+      },
+      {
+        path: 'coinsspend',
+        component: () => import('@/views/CoinsSpend.vue')
+      },
     ]
   }
 ]
