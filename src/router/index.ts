@@ -59,6 +59,10 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/SpecialPage.vue')
       },
       {
+        path: 'game',
+        component: () => import('@/views/GamePage.vue')
+      },
+      {
         path: 'coinsspend',
         component: () => import('@/views/CoinsSpend.vue')
       },

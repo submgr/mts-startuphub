@@ -14,14 +14,14 @@
         </ion-header>
         <div class="card-alfa">
             <ion-icon class="text-a1" ></ion-icon>
-            <div class="text-a1">10 coins&nbsp;</div>
+            <div class="text-a1">10 XP &nbsp;</div>
         </div>
-        <div style="margin-left: 4%; padding-top: 11%; overflow:scroll; white-space: nowrap;">
+        <div style="margin-left: 4%; padding-top: 6%; overflow:scroll; white-space: nowrap;">
             <div class="card-alfa custom-swiper bg-i1 suggestion-block" style="margin-left: 0% !important;">
                 <div class="text-a1">MTS Startup Hub Merchandise</div>
             </div>
             <div class="card-alfa custom-swiper bg-i2 suggestion-block" style="margin-left: 0% !important;">
-                <div class="text-a1">Meet season `23 featured experts</div>
+                <div class="text-a1">Session with season `23 featured experts</div>
             </div>
         </div>
     </ion-content>
