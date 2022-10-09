@@ -5,7 +5,7 @@
         <img style="padding-top: 10rem; height: auto; width: 70%; max-width: 400px; margin-left: auto; margin-right: auto; display: block;" :src="natureEllipse">
 
         <p style="text-align: center;padding: 0px 18px 0px; margin-top: 2rem; margin-bottom: 0; transform-origin: left center; align-items: flex-end; min-width: 100%; font-size: 21px; font-weight: 400;">{{ natureText }}</p>
-        <p style="text-align: center;padding: 0px 22px 0px; margin: 0; transform-origin: left center; align-items: flex-end; min-width: 100%; font-size: 24px; font-weight: 700;">АЛЕКСАНДР!</p>
+        <p style="text-align: center;padding: 0px 22px 0px; margin: 0; transform-origin: left center; align-items: flex-end; min-width: 100%; font-size: 24px; font-weight: 700;">Alexander!</p>
         
         <div id="outer" style="margin-top: 4rem; display: flex; justify-content: center;">
           <ion-spinner name="crescent"></ion-spinner>
@@ -108,15 +108,15 @@ export default defineComponent({
       switch (true) {
         case (300 <= dayMinutes &&  dayMinutes < 660):
           natureEllipse_Image = imageLookup("morning");
-          natureEllipse_Text = get_random(["Доброе утро,", "Салют новому дню,", "Волшебного тебе утра,", "Продуктивного тебе утра,", "Счастливого дня,", "С новым днем,", "Подъем,", "Удачных удач,"])
+          natureEllipse_Text = get_random(["Good morning,", "Salute to a new day,", "Have a magical morning,", "Have a productive morning,", "Happy day,", "Happy new day,", "Wake up,", "Good luck,"])
           break;
         case (660 <= dayMinutes &&  dayMinutes < 1080):
           natureEllipse_Image = imageLookup("afternoon");
-          natureEllipse_Text = get_random(["Это прекрасный день,", "У тебя все получится,", "Какой хороший день,", "Сегодня в моде улыбаться,"])
+          natureEllipse_Text = get_random(["It's a beautiful day,", "You'll do fine,", "What a good day,", "Smiling is in fashion today,"])
           break;
         case (1080 <= dayMinutes && dayMinutes < 1260):
           natureEllipse_Image = imageLookup("evening");
-          natureEllipse_Text = get_random(["Хорошего вечера,", "Время отдохнуть,", "День только начинается,", "Хороших снов,", "Добрых снова,", "Споки-ноки,", "Завтра ты проснешься легко,", "Уютного сна,"])
+          natureEllipse_Text = get_random(["Good evening,", "Time to rest,", "The day is just beginning,", "Sleep well,", "Sweet dreams,", "Nighty-night,", "You'll wake up easy tomorrow,", "Sleep well,"])
           break;
         case ((0 <= dayMinutes && dayMinutes < 300) || (1260 <= dayMinutes && dayMinutes < 9999)):
           natureEllipse_Image = imageLookup("night");

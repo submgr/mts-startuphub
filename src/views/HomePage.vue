@@ -22,7 +22,7 @@
                     <router-link to="/tabs/coinsspend">
                         <div class="card-alfa small-card small-card-left">
                             <ion-icon class="text-a1" ></ion-icon>
-                            <div class="text-a1">Получить&nbsp;</div>
+                            <div class="text-a1">Earn more&nbsp;</div>
                         </div>
                     </router-link>
                 </ion-col>
@@ -30,7 +30,7 @@
                     <router-link to="/tabs/coinsspend">
                         <div class="card-alfa small-card small-card-right">
                             <ion-icon class="text-a1"></ion-icon>
-                            <div class="text-a1">Обменять&nbsp;</div>
+                            <div class="text-a1">Swap it'ow!</div>
                         </div>
                     </router-link>
                 </ion-col>

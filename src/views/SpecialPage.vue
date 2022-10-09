@@ -34,9 +34,11 @@
             <div class="user-stories-avatar5" style="height: 70px; width: 70px; background-color: red; border-radius: 50%; display: inline-block; margin-right: 3%;"></div>
         </div>
         <content class="page">
-            <div class="card-alfa" style="margin-left: 4%; margin-right: 4%; box-shadow: -0.2lpx 0.2px #ff484871;">
-                <div class="text-a1">Meeting: "MTS Startup Hub `23</div>
-            </div>
+            <router-link to="/tabs/livemeeting">
+                <div class="card-alfa event-image" style="margin-left: 4%; margin-right: 4%;">
+                    <div class="text-a1">Meeting: "MTS Startup Hub `23</div>
+                </div>
+            </router-link>
             <div style="margin-left: 4%; padding-top: 11%; overflow:scroll; white-space: nowrap;">
                 <div class="card-alfa custom-swiper bg-i1" style="margin-left: 0% !important;">
                     <div class="text-a1">Speak about your startup to investors</div>
@@ -68,10 +70,17 @@
         border-radius: 26px;
         height: 30vh;
         width: auto;
-        background-image: url("../assets/photos/charlesdeluvio-wn7dOzUh3Rs-unsplash.jpg");
         background-size:     cover;
         background-repeat:   no-repeat;
     }
+
+    .event-image{
+        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("https://images.unsplash.com/photo-1563461660947-507ef49e9c47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:     cover;
+    }
+
 
     .custom-swiper {
         display: inline-block;
@@ -98,14 +107,18 @@
         font-weight: 600;
     }
 
+    .event-image .text-a{
+        bottom: 6% !important;
+    }
+
     .bg-i1{
         background-image: none;
-        background-color: #e10d1e !important;
+        background-image: linear-gradient(to right, #d5937dbc 0%, #bc9292e4 100%);
     }
 
     .bg-i2{
         background-image: none;
-        background-color: #204171 !important;
+        background-image: linear-gradient(to right, #412a62c6 0%, #61196994 100%);
     }
 
     .user-stories-avatar1{

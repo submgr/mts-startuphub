@@ -66,6 +66,10 @@ const routes: Array<RouteRecordRaw> = [
         path: 'coinsspend',
         component: () => import('@/views/CoinsSpend.vue')
       },
+      {
+        path: 'livemeeting',
+        component: () => import('@/views/LiveMeeting.vue')
+      },
     ]
   }
 ]
@@ -87,6 +91,11 @@ router.beforeResolve((to, from, next) => {
 router.afterEach((to, from) => {
   // Complete the animation of the route progress bar.
   console.log("Loaded the next (current) page.");
+  const tabsEl = document.querySelector('ion-tab-bar');
+  if (tabsEl) {
+    tabsEl.hidden = false;
+    tabsEl.style.height = "1";
+  }
 })
 
 export default router
