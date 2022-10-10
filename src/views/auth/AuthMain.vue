@@ -123,9 +123,9 @@ import {
     chatbubbleOutline
 } from 'ionicons/icons';
 
-import {
-    GoogleAuth
-} from '@codetrix-studio/capacitor-google-auth';
+//import {
+//    GoogleAuth
+//} from '@codetrix-studio/capacitor-google-auth';
 
 import axios from 'axios'
 
@@ -154,11 +154,11 @@ export default defineComponent({
             tabsEl.style.height = "1";
         }
 
-        GoogleAuth.initialize({
-            clientId: '33960040607-coalo6hl8cscmu8mngtb3rf6jgnibr5q.apps.googleusercontent.com',
-            scopes: ['profile', 'email'],
-            grantOfflineAccess: true,
-        });
+        //GoogleAuth.initialize({
+        //    clientId: '33960040607-coalo6hl8cscmu8mngtb3rf6jgnibr5q.apps.googleusercontent.com',
+        //    scopes: ['profile', 'email'],
+        //    grantOfflineAccess: true,
+        //});
     },
     setup() {
         return {
@@ -172,7 +172,7 @@ export default defineComponent({
         async Modal_onWillDismiss(){
             this.message_modal_isOpen = false;
         },
-        async authenticateWithGoogle(){
+        /*async authenticateWithGoogle(){
             const userResponse = await GoogleAuth.signIn()
                     var accessToken = userResponse.authentication.accessToken;
                     var idToken = userResponse.authentication.idToken;
@@ -194,7 +194,7 @@ export default defineComponent({
                             parent_this.message_modal_isOpen = true;
                         });
                     // add the code for the functionality your need
-        }
+        }*/
             
     }
 })

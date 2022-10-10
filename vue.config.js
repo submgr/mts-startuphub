@@ -2,6 +2,7 @@ const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 // vue.config.js
 module.exports = {
+    publicPath: './',
     configureWebpack: {
       plugins: [
         new ImageMinimizerPlugin({
