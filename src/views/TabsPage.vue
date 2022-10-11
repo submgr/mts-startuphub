@@ -3,12 +3,12 @@
     <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="tab1" href="/tabs/tab1">
+        <ion-tab-button tab="tab1" href="/tabs/chats">
           <ion-icon :icon="chatbubbleOutline " />
         </ion-tab-button>
           
         <ion-tab-button tab="tab2" href="/tabs/hello">
-          <ion-icon :icon="bookOutline" />
+          <ion-icon :icon="flameOutline" />
         </ion-tab-button>
 
         <ion-tab-button tab="tab3" href="/tabs/home">
@@ -30,7 +30,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { IonTabBar, IonTabButton, IonTabs, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { bookOutline, flashOutline, happyOutline, chatbubbleOutline, homeOutline, sparklesOutline, gameControllerOutline } from 'ionicons/icons';
+import { bookOutline, flashOutline, happyOutline, chatbubbleOutline, homeOutline, sparklesOutline, gameControllerOutline, flameOutline } from 'ionicons/icons';
 
 export default defineComponent({
   name: 'TabsPage',
@@ -44,6 +44,7 @@ export default defineComponent({
       homeOutline,
       sparklesOutline,
       gameControllerOutline,
+      flameOutline,
       footer: "show"
     }
   }

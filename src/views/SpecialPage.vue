@@ -1,5 +1,6 @@
 <template>
-  <div
+    <ion-page>
+        <div
             v-if="showStory"
             style="position: absolute; height: 100vh; width: 100vw; background: black; top: 0rem !important;"
             >
@@ -14,16 +15,15 @@
                 />
             </section>
         </div>
-    <ion-page>
       <ion-header>
         <ion-toolbar>
-          <ion-title>Tab 1</ion-title>
+          <ion-title>Подборка</ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content :fullscreen="true">
         <ion-header collapse="condense">
           <ion-toolbar>
-            <ion-title size="large">Featured</ion-title>
+            <ion-title size="large">Подборка</ion-title>
           </ion-toolbar>
         </ion-header>
         <div style="padding: 20px; padding-top: 25px; overflow:scroll; white-space: nowrap; overflow-x: hidden !important;" @click="toggleStory">
@@ -36,15 +36,15 @@
         <content class="page">
             <router-link to="/tabs/livemeeting">
                 <div class="card-alfa event-image" style="margin-left: 4%; margin-right: 4%;">
-                    <div class="text-a1">Meeting: "MTS Startup Hub `23</div>
+                    <div class="text-a1">Митап: MTS Startup Hub `23</div>
                 </div>
             </router-link>
             <div style="margin-left: 4%; padding-top: 11%; overflow:scroll; white-space: nowrap;">
                 <div class="card-alfa custom-swiper bg-i1" style="margin-left: 0% !important;">
-                    <div class="text-a1">Speak about your startup to investors</div>
+                    <div class="text-a1">Расскажите о своем стартапе инвесторам</div>
                 </div>
                 <div class="card-alfa custom-swiper bg-i2">
-                    <div class="text-a1">Meet season `23 featured experts</div>
+                    <div class="text-a1">Встречаем экспертов этого сезона — `23</div>
                 </div>
             </div>
         </content>
@@ -161,11 +161,18 @@
   import { defineComponent } from 'vue';
   import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 
+  import { closeOutline } from 'ionicons/icons';
+
   import { Stories } from "vue-insta-stories";
   
   export default  defineComponent({
     name: 'SpecialPage',
     components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, Stories },
+    setup() {
+        return {
+            closeOutline
+        }
+    },
     watch: {
         showStory: function (val) {
             if(this.showStory){
@@ -193,7 +200,7 @@
     },
     methods: {
         toggleStory() {
-        this.showStory = !this.showStory
+            this.showStory = !this.showStory
         },
     },
     data: () => ({

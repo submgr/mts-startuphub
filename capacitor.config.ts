@@ -1,9 +1,9 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.aramvirabyan.startuphub',
-  appName: 'Startup Hub',
-  webDir: 'public',
+  appId: 'io.ionic.starter',
+  appName: 'meditations-ionic-vue',
+  webDir: 'dist',
   bundledWebRuntime: false
 };
 

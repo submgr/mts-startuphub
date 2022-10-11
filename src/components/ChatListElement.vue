@@ -1,5 +1,6 @@
 <template>
     <ion-grid>
+        <hr class="hr">
         <ion-row>
             <ion-col size="3">
                 <div :v-if="final_avatar_url" class="avatar" :style="{ backgroundImage: `url(` + avatar_url + `)` }">
@@ -15,9 +16,23 @@
 </template>
 
 <style scoped>
+    ion-row{
+        top: 0 !important;
+        background-color: none;
+    }
+
+    ion-row:active{
+        background-color: rgba(255, 255, 255, 0.07);
+        box-shadow: 0 0 20px 25px rgba(255, 255, 255, 0.08);
+    }
 
     ion-grid{
-        margin-top: 1%;
+        margin-top: 0%;
+    }
+    .hr{
+        background-color: rgba(255, 255, 255, 0.061) !important;
+        width: 100%;
+        bottom: 0;
     }
     .avatar{
         border-radius: 45px;
@@ -29,7 +44,7 @@
     }
 
     .dataBody{
-        margin-top: 2%;
+        margin-top: 3%;
     }
 
     .name{

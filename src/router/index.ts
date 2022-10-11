@@ -63,6 +63,10 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/GamePage.vue')
       },
       {
+        path: 'coinsearn',
+        component: () => import('@/views/CoinsEarn.vue')
+      },
+      {
         path: 'coinsspend',
         component: () => import('@/views/CoinsSpend.vue')
       },
@@ -70,6 +74,14 @@ const routes: Array<RouteRecordRaw> = [
         path: 'livemeeting',
         component: () => import('@/views/LiveMeeting.vue')
       },
+      {
+        path: 'chats',
+        component: () => import('@/views/ChatsList.vue')
+      },
+      {
+        path: 'lookfor',
+        component: () => import('@/views/LookforScreen.vue')
+      }
     ]
   }
 ]

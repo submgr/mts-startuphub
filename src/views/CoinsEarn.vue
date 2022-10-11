@@ -1,47 +1,56 @@
 <template>
     
     <ion-page>
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>Награды</ion-title>
+        <ion-header>
+            <ion-toolbar>
         </ion-toolbar>
       </ion-header>
       <ion-content :fullscreen="true">
         <ion-header collapse="condense">
           <ion-toolbar>
-            <ion-title size="large">Награды</ion-title>
+            <ion-title size="large">Получить баллы</ion-title>
           </ion-toolbar>
         </ion-header>
         <div class="card-alfa">
             <ion-icon class="text-a1" ></ion-icon>
-            <div class="text-a1">10 баллов&nbsp;</div>
+            <div class="text-a1">10 баллов &nbsp;</div>
         </div>
-        <ion-grid>
-            <ion-row>
-                <ion-col>
-                    <router-link to="/tabs/coinsearn">
-                        <div class="card-alfa small-card small-card-left">
-                            <ion-icon class="text-a1" ></ion-icon>
-                            <div class="text-a1">Получить больше</div>
-                        </div>
-                    </router-link>
-                </ion-col>
-                <ion-col>
-                    <router-link to="/tabs/coinsspend">
-                        <div class="card-alfa small-card small-card-right">
-                            <ion-icon class="text-a1"></ion-icon>
-                            <div class="text-a1">Обменять баллы</div>
-                        </div>
-                    </router-link>
-                </ion-col>
-            </ion-row>
-        </ion-grid>
+        <div style="margin-left: 4%; padding-top: 6%; overflow:scroll; white-space: nowrap;">
+            <div class="card-alfa custom-swiper bg-i1 suggestion-block" style="margin-left: 0% !important;">
+                <div class="text-a1">Вы можете получить больше баллов и вот в каких случаях они начисляются:<span style="font-size: 14px; font-weight: 300;"><br>— прогресс в обучении и игре «Мета Стартап»;<br>— участие в мероприятиях MTS Startup Hub;<br>— активное участие в деятельности сообщества;<br>— взаимодействия с другими участниками.</span></div>
+            </div>
+        </div>
     </ion-content>
 </ion-page>
 </template>
 
 
 <style scoped>
+
+    .suggestion-block{
+        margin-top: 0 !important;
+        margin-bottom: 5%;
+        height: 48vh !important;
+        background-color: rgba(255, 255, 255, 0.104) !important;
+        background-image: none !important;
+    }
+
+    .suggestion-block .text-a1{
+        margin-left: 4%;
+        margin-right: 4%;
+        text-align: left;
+        position: absolute;
+        white-space: normal; 
+        word-wrap: break-word !important;
+        background-image: linear-gradient(45deg, #797973 0%, #ffffff 50%, #fbfcdb 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        bottom: 9%;
+        left: 0% !important;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    
     ion-page {
         --background: #111111;
     }
@@ -58,7 +67,7 @@
     }
 
     .small-card{
-        height: 18vh;
+        height: 12vh;
     }
 
     .small-card-left{
@@ -115,21 +124,15 @@ import {
 import {
     IonPage,
     IonContent,
-    IonCol,
-    IonGrid,
-    IonRow
 } from '@ionic/vue';
 
 import { closeOutline, sparkles } from 'ionicons/icons';
 
 export default defineComponent({
-    name: 'HomePage',
+    name: 'CoinsEarn',
     components: {
         IonContent,
         IonPage,
-        IonCol,
-        IonGrid,
-        IonRow
     },
     setup() {
         return {

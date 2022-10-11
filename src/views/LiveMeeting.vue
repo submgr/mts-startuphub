@@ -26,7 +26,7 @@
                     </svg>
                 </span>
                 </button>
-                <span class="name">Marc Isaac</span>
+                <span class="name">Иван Волков</span>
             </div>
             <div class="ui-container">
                 <div class="navigation-controls-container">
